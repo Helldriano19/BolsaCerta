@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BolsaCerta</title>
+  <!-- Eu ligo aqui o ficheiro de estilo (CSS) a esta página -->
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- 1. CABEÇALHO: eu ponho o logo, o menu e o botão Entrar -->
+  <header>
+    <div class="caixa">
+      <a class="logo" href="index.html">Bolsa<span>Certa</span></a>
+      <!-- Cada link do menu tem um ícone (emoji) e um texto -->
+      <nav>
+        <a href="catalogo.html">Encontrar bolsas</a>
+        <a href="index.html#passos">Como candidatar-se</a>
+        <a class="entrar" href="#">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. HERO: eu coloco o título, a pesquisa e a imagem -->
+  <section class="hero caixa">
+    <div class="hero-texto">
+      <p class="etiqueta">OPORTUNIDADES QUE ABREM CAMINHOS</p>
+      <h1>O seu futuro começa com a <span>bolsa certa.</span></h1>
+      <p>Descubra bolsas em Angola e no mundo. Compare os apoios e conheça os requisitos.</p>
+
+      <!-- Neste formulário eu uso o id="form-pesquisa" para o JavaScript o encontrar -->
+      <form id="form-pesquisa">
+        <input id="q" type="text" placeholder="Curso, área de estudo ou nome da bolsa">
+        <select id="tipo">
+          <option value="">Todos os destinos</option>
+          <option value="interna">Em Angola</option>
+          <option value="externa">No estrangeiro</option>
+        </select>
+        <button type="submit">Pesquisar</button>
+      </form>
+
+      <!-- Pesquisas rápidas: cada link já leva ao catálogo com a palavra escolhida -->
+      <p class="populares">
+        Populares:
+        <a href="catalogo.html?q=Licenciatura">Licenciatura</a>
+        <a href="catalogo.html?q=Mestrado">Mestrado</a>
+        <a href="catalogo.html?q=Portugal">Portugal</a>
+      </p>
+    </div>
+
+    <!-- Eu guardo a imagem do IGNABE na pasta img com o nome ignabe.jpg -->
+    <img src="img/banner_bolsa_de_estudo.jpg" alt="BODIVA">
+  </section>
+
+  <!-- 3. DESTAQUES: eu deixo a div vazia e o JavaScript preenche-a com os cartões -->
+  <section class="cinza">
+    <div class="caixa">
+      <h2>Bolsas em destaque</h2>
+      <div id="destaques" class="cartoes"></div>
+    </div>
+  </section>
+
+  <!-- 4. PASSOS: eu explico em 3 passos como funciona -->
+  <section id="passos" class="caixa">
+    <h2>Um passo de cada vez</h2>
+    <div class="cartoes">
+      <div class="cartao"><h3>1. Encontre a sua bolsa</h3><p>Use os filtros para escolher destino e nível de estudo.</p></div>
+      <div class="cartao"><h3>2. Prepare a candidatura</h3><p>Reúna certificados e carta de motivação.</p></div>
+      <div class="cartao"><h3>3. Candidate-se</h3><p>Submeta no portal oficial da instituição.</p></div>
+    </div>
+    <p class="aviso"><b>A sua segurança vem primeiro.</b> Desconfie de promessas de aprovação garantida.</p>
+  </section>
+
+  <!-- 5. RODAPÉ -->
+  <footer>
+    <div class="caixa">© 2026 BolsaCerta · Protótipo demonstrativo · <a href="admin.html">Administração</a></div>
+  </footer>
+
+  <!-- Eu ponho o JavaScript no fim para a página já existir quando ele correr -->
+  <script src="dados.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

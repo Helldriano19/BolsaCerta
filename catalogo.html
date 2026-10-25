@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encontrar bolsas - BolsaCerta</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- Cabeçalho igual ao da página inicial -->
+  <header>
+    <div class="caixa">
+      <a class="logo" href="index.html">Bolsa<span>Certa</span></a>
+      <nav>
+        <a href="catalogo.html">Encontrar bolsas</a>
+        <a href="index.html#passos">Como candidatar-se</a>
+        <a class="entrar" href="#">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="caixa">
+    <h1 class="titulo-pagina">Encontre uma oportunidade para si</h1>
+
+    <!-- Filtros: eu uso os ids para o JavaScript os encontrar -->
+    <div class="filtros">
+      <input id="f-q" type="text" placeholder="Pesquisar por nome, curso ou país">
+      <select id="f-tipo">
+        <option value="">Todos os destinos</option>
+        <option value="interna">Internas (Angola)</option>
+        <option value="externa">Externas</option>
+      </select>
+      <select id="f-nivel">
+        <option value="">Todos os níveis</option>
+        <option>Licenciatura</option>
+        <option>Mestrado</option>
+        <option>Doutoramento</option>
+        <option>Formação técnica</option>
+        <option>Mobilidade</option>
+      </select>
+      <select id="f-fin">
+        <option value="">Qualquer financiamento</option>
+        <option>Integral</option>
+        <option>Parcial</option>
+      </select>
+      <button id="limpar" type="button" class="secundario">Limpar</button>
+    </div>
+
+    <!-- Aqui mostro quantas bolsas encontrei e depois os cartões -->
+    <p id="contador" class="detalhe-texto"></p>
+    <div id="resultados" class="cartoes"></div>
+  </main>
+
+  <footer>
+    <div class="caixa">© 2026 BolsaCerta · Protótipo demonstrativo · <a href="admin.html">Administração</a></div>
+  </footer>
+
+  <script src="dados.js"></script>
+  <script src="catalogo.js"></script>
+</body>
+</html>

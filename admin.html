@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Administração - BolsaCerta</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <div class="caixa">
+      <a class="logo" href="index.html">Bolsa<span>Certa</span></a>
+      <nav>
+        <a href="catalogo.html">Encontrar bolsas</a>
+        <a href="index.html#passos">Como candidatar-se</a>
+        <a class="entrar" href="admin.html">Administração</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="caixa">
+    <h1 class="titulo-pagina">Administração de bolsas</h1>
+    <p class="aviso">Versão de demonstração: as bolsas ficam guardadas só neste navegador. Mais tarde vão para a base de dados.</p>
+
+    <!-- Formulário para adicionar uma bolsa -->
+    <h2>Adicionar bolsa</h2>
+    <form id="form-admin" class="form-admin">
+      <label>Título
+        <input id="a-titulo" type="text" required>
+      </label>
+      <label>Instituição
+        <input id="a-inst" type="text" required>
+      </label>
+      <label>Destino
+        <select id="a-tipo">
+          <option>Interna</option>
+          <option>Externa</option>
+        </select>
+      </label>
+      <label>País
+        <input id="a-pais" type="text" required>
+      </label>
+      <label>Nível de estudo
+        <select id="a-nivel">
+          <option>Licenciatura</option>
+          <option>Mestrado</option>
+          <option>Doutoramento</option>
+          <option>Formação técnica</option>
+          <option>Mobilidade</option>
+        </select>
+      </label>
+      <label>Financiamento
+        <select id="a-fin">
+          <option>Integral</option>
+          <option>Parcial</option>
+        </select>
+      </label>
+      <label>O que cobre
+        <input id="a-cob" type="text" placeholder="Ex.: 100% das propinas" required>
+      </label>
+      <label>Prazo
+        <input id="a-prazo" type="date" required>
+      </label>
+      <button type="submit">Adicionar bolsa</button>
+    </form>
+    <p id="mensagem" class="mensagem"></p>
+
+    <!-- Tabela com as bolsas que já existem -->
+    <h2>Bolsas existentes</h2>
+    <table id="tabela">
+      <thead>
+        <tr><th>Título</th><th>Destino</th><th>País</th><th>Nível</th><th>Prazo</th><th></th></tr>
+      </thead>
+      <tbody id="corpo-tabela"></tbody>
+    </table>
+  </main>
+
+  <footer>
+    <div class="caixa">© 2026 BolsaCerta · Protótipo demonstrativo</div>
+  </footer>
+
+  <script src="dados.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
