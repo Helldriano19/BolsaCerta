@@ -4,3 +4,7 @@ Podem me actualizar?
  R(mar): Idk o Olavio esta ocupado a ajudar o pai, eu pedi que fizessem a logica de busca já que não sei js, Baixa o  codigo e vè se consegues adicionar o que fizeste, eu fiz as css e o claude fez tudo que é js, Não tens discord para fazer call?
  
 R(helmer): qual é o teu nick no discord?
+
+
+R(Mar): mariowagner4699
+
