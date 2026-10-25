@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bolsa · BolsaCerta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bolsa.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="logo" href="index.html">Bolsa<b>Certa</b></a>
+      <nav aria-label="Principal">
+        <a href="index.html#bolsas" class="on">Encontrar bolsas</a>
+        <a href="#como">Como candidatar-se</a>
+        <a href="#">Sobre nós</a>
+      </nav>
+      <div class="acc"><a href="#">Entrar</a><a class="btn ghost" href="#">Criar conta</a></div>
+    </header>
+
+    <main id="app" aria-live="polite"><p class="state">A carregar bolsa…</p></main>
+
+    <footer class="foot">
+      <p>© 2026 BolsaCerta. Protótipo demonstrativo · Oportunidades não verificadas</p>
+    </footer>
+    <div id="toast" class="toast" role="status"></div>
+    <script src="dados.js"></script>
+    <script src="bolsa.js"></script>
+  </body>
+</html>

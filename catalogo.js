@@ -21,7 +21,7 @@ function filtrar() {
     var b = todas[i];
 
     // Junto os textos da bolsa numa só frase para procurar a palavra lá dentro
-    var texto = (b.titulo + " " + b.instituicao + " " + b.pais + " " + b.nivel + " " + b.cobertura).toLowerCase();
+    var texto = (b.titulo + " " + b.inst + " " + b.pais + " " + b.nivel + " " + b.cobertura).toLowerCase();
 
     // A bolsa só entra se passar em TODAS as condições
     var passaTexto = (q === "" || texto.indexOf(q) !== -1);
