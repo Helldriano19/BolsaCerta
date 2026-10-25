@@ -8,3 +8,6 @@ R(helmer): qual é o teu nick no discord?
 
 R(Mar): mariowagner4699
 
+R(mar): Qual é o teu nick Helmer?, estas a demorar para mandar
+
+
