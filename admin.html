@@ -13,6 +13,7 @@
       <a class="logo" href="index.html">Bolsa<span>Certa</span></a>
       <nav>
         <a href="catalogo.html">Encontrar bolsas</a>
+        <a href="mentoria.html">Mentoria</a>
         <a href="index.html#passos">Como candidatar-se</a>
         <a class="entrar" href="admin.html">Administração</a>
       </nav>
@@ -34,8 +35,8 @@
       </label>
       <label>Destino
         <select id="a-tipo">
-          <option>Interna</option>
-          <option>Externa</option>
+          <option value="interna">Interna</option>
+          <option value="externa">Externa</option>
         </select>
       </label>
       <label>País
@@ -62,6 +63,7 @@
       <label>Prazo
         <input id="a-prazo" type="date" required>
       </label>
+      <label class="check"><input id="a-destaque" type="checkbox"> Mostrar em destaque na página inicial</label>
       <button type="submit">Adicionar bolsa</button>
     </form>
     <p id="mensagem" class="mensagem"></p>

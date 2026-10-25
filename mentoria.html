@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mentoria - BolsaCerta</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <div class="caixa">
+      <a class="logo" href="index.html">Bolsa<span>Certa</span></a>
+      <nav>
+        <a href="catalogo.html">Encontrar bolsas</a>
+        <a href="mentoria.html">Mentoria</a>
+        <a href="index.html#passos">Como candidatar-se</a>
+        <a class="entrar" href="#">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 1. HERO: o problema e a promessa -->
+  <section class="hero caixa">
+    <div class="hero-texto">
+      <p class="etiqueta">NÃO TE CANDIDATURES ÀS CEGAS</p>
+      <h1>Não deixes que um <span>documento errado</span> comprometa a tua candidatura.</h1>
+      <p>Ajudamos-te a perceber os requisitos da bolsa, preparar os documentos certos e rever a tua candidatura antes de a submeteres.</p>
+      <ul class="pontos">
+        <li>Orientação personalizada</li>
+        <li>Checklist de documentos</li>
+        <li>Revisão da candidatura</li>
+      </ul>
+      <a class="botao" href="#pedido">Falar com um mentor</a>
+    </div>
+
+  </section>
+
+  <!-- 2. ERROS QUE PODEM COMPROMETER UMA CANDIDATURA -->
+  <section class="cinza">
+    <div class="caixa">
+      <h2>Erros que podem comprometer uma candidatura</h2>
+      <p class="detalhe-texto">Muitas candidaturas não falham por falta de mérito, mas por falta de preparação. Estes são erros comuns; o que conta em cada caso são as regras do programa.</p>
+
+      <div class="cartoes">
+        <div class="cartao">
+          <span class="num">01</span>
+          <h3>Apresentar o documento errado</h3>
+        </div>
+        <div class="cartao">
+          <span class="num">02</span>
+          <h3>Ignorar autenticações e legalizações</h3>
+        </div>
+        <div class="cartao">
+          <span class="num">03</span>
+          <h3>Entregar um certificado incompleto</h3>
+        </div>
+        <div class="cartao">
+          <span class="num">04</span>
+          <h3>Interpretar mal o prazo</h3>
+        </div>
+        <div class="cartao">
+          <span class="num">05</span>
+          <h3>Enviar ficheiros no formato errado</h3>
+        </div>
+      </div>
+
+      <div class="chamada">
+        <p>Cada bolsa tem regras próprias. O mais importante é saber exactamente o que a tua candidatura exige.</p>
+        <a class="botao" href="#pedido">Quero rever a minha candidatura</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PARA QUEM É -->
+  <section class="caixa">
+    <h2>Para quem é esta mentoria?</h2>
+    <div class="cartoes">
+      <div class="cartao"><h3>Encontraste uma bolsa</h3><p>Mas não percebes todos os requisitos.</p></div>
+      <div class="cartao"><h3>Tens os documentos</h3><p>Mas não sabes se estão correctos.</p></div>
+      <div class="cartao"><h3>Estás pronto para submeter</h3><p>E queres uma revisão final antes de enviar.</p></div>
+    </div>
+  </section>
+
+  <!-- 4. COMO AJUDAMOS -->
+  <section class="cinza">
+    <div class="caixa">
+      <h2>Como ajudamos</h2>
+      <div class="cartoes">
+        <div class="cartao">
+          <h3>1. Analisamos o teu objectivo</h3>
+          <p>Identificamos a bolsa, o destino, o nível de estudos e a fase em que estás.</p>
+        </div>
+        <div class="cartao">
+          <h3>2. Organizamos os próximos passos</h3>
+          <p>Interpretamos os requisitos, vemos que documentos faltam e definimos prioridades.</p>
+        </div>
+        <div class="cartao">
+          <h3>3. Revemos a candidatura contigo</h3>
+          <p>Conferimos o que ficou combinado e apontamos falhas antes de submeteres.</p>
+        </div>
+      </div>
+      <p class="aviso">A mentoria não garante a atribuição da bolsa. A candidatura e a submissão são sempre tuas. Nunca partilhes palavras-passe ou códigos de acesso.</p>
+    </div>
+  </section>
+
+  <!-- 5. MENTORES -->
+  <section class="caixa">
+    <h2>Mentores</h2>
+    <p class="aviso">Cartões de exemplo: os nomes e as descrições são fictícios, só para montar a página.</p>
+    <div class="cartoes">
+      <div class="cartao">
+        <span class="tag">Exemplo</span>
+        <h3>Nome do mentor</h3>
+        <p class="detalhe">Formação e experiência a preencher</p>
+        <p class="detalhe">Países e programas: a preencher</p>
+        <p>Ajudo candidatos a perceber os requisitos e a organizar a candidatura.</p>
+      </div>
+      <div class="cartao">
+        <span class="tag">Exemplo</span>
+        <h3>Nome do mentor</h3>
+        <p class="detalhe">Formação e experiência a preencher</p>
+        <p class="detalhe">Países e programas: a preencher</p>
+        <p>Ajudo candidatos a rever documentos antes da submissão.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PEDIDO DE MENTORIA -->
+  <section id="pedido" class="cinza">
+    <div class="caixa">
+      <h2>Pedir mentoria</h2>
+      <p class="detalhe-texto">Conta-nos em que ponto estás. Não precisas de enviar documentos pessoais.</p>
+
+      <form id="form-pedido" class="form-admin">
+        <label>Nome
+          <input id="p-nome" type="text" required>
+        </label>
+        <label>Contacto (email ou WhatsApp)
+          <input id="p-contacto" type="text" required>
+        </label>
+        <label>Que bolsa te interessa?
+          <input id="p-bolsa" type="text" placeholder="Pode ser só uma ideia">
+        </label>
+        <label>País de destino
+          <select id="p-pais">
+            <option>Angola</option>
+            <option>Portugal</option>
+            <option>Outro país</option>
+            <option>Ainda estou a decidir</option>
+          </select>
+        </label>
+        <label>Em que fase estás?
+          <select id="p-fase">
+            <option>Ainda estou a procurar bolsas</option>
+            <option>Encontrei uma bolsa</option>
+            <option>Estou a preparar documentos</option>
+            <option>Já preparei a candidatura</option>
+          </select>
+        </label>
+        <label class="larga">Qual é a tua principal dúvida?
+          <textarea id="p-duvida" rows="4"></textarea>
+        </label>
+        <button type="submit">Pedir mentoria</button>
+      </form>
+      <p id="mensagem" class="mensagem"></p>
+      <p class="detalhe-texto">Demonstração: o pedido fica guardado só neste navegador. Ainda não é enviado à equipa.</p>
+    </div>
+  </section>
+
+  <!-- 7. PERGUNTAS FREQUENTES -->
+  <!-- Atenção: as respostas têm de bater certo com o serviço real. Confirmar antes de publicar. -->
+  <section class="caixa">
+    <h2>Perguntas frequentes</h2>
+
+    <details>
+      <summary>A mentoria garante que vou conseguir uma bolsa?</summary>
+      <p>Não. Ajuda-te a evitar erros e a apresentar uma candidatura mais cuidada, mas a decisão é sempre da instituição.</p>
+    </details>
+    <details>
+      <summary>Posso pedir ajuda sem ter escolhido uma bolsa?</summary>
+      <p>Sim. Podemos ajudar-te a perceber por onde começar.</p>
+    </details>
+    <details>
+      <summary>A mentoria é paga?</summary>
+      <p>Sim, é um serviço pago.</p>
+    </details>
+    <details>
+      <summary>Ajudam a preparar a carta de motivação?</summary>
+      <p>Podemos dar feedback sobre a estrutura e a clareza. A carta é sempre escrita por ti.</p>
+    </details>
+    <details>
+      <summary>A mentoria é online?</summary>
+      <p>Sim, o acompanhamento é feito online.</p>
+    </details>
+  </section>
+
+  <footer>
+    <div class="caixa">© 2026 BolsaCerta · MVP · <a href="admin.html">Administração</a></div>
+  </footer>
+
+  <script src="mentoria.js"></script>
+</body>
+</html>
